@@ -22,7 +22,8 @@ jobs:
      - name: testing approvals
        uses: trstringer/manual-approval@v1
        with:
-          approvers: user1,user2,org-team1
+          secret: ${{ secret.TOKEN }}
+          approvers: hatizaz-nisum-com
           minimum-approvals: 1
           issue-title: "Deploying v1.3.5 to prod from staging"
           issue-body: "Please approve or deny the deployment of version v1.3.5."
